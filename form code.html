@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Front End Form</h1>
+        <p id="description" class="description text-center">
+          What are your hard skills?
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>What is your level?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select your level**</option>
+            <option value="student">student</option>
+            <option value="job">junior</option>
+            <option value="learner">middle</option>
+            <option value="preferNo">senior</option>
+            <option value="other">other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Do you like programming?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Yes</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />No</label
+          >
+
+                </div>
+
+              <div class="form-group">
+          <p>
+            What technologies and tools do you use?
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="HTML5-CSS3"
+              type="checkbox"
+              class="input-checkbox"
+            />HTML5 & CSS3</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="flex-grid"
+              type="checkbox"
+              class="input-checkbox"
+            />Flex and Grid CSS</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="bootstrap"
+              type="checkbox"
+              class="input-checkbox"
+            />Bootstrap</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="git"
+              type="checkbox"
+              class="input-checkbox"
+            />Git & GitHub</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="javascript"
+              type="checkbox"
+              class="input-checkbox"
+            />JavaScript</label
+          >
+      <label
+            ><input
+              name="prefer"
+              value="dom"
+              type="checkbox"
+              class="input-checkbox"
+            />DOM</label
+          >
+  <label
+            ><input
+              name="prefer"
+              value="ajax"
+              type="checkbox"
+              class="input-checkbox"
+            />AJAX</label
+          >
+
+ <label
+            ><input
+              name="prefer"
+              value="other"
+              type="checkbox"
+              class="input-checkbox"
+            />other</label
+          >
+
+        </div>
+
+        <div class="form-group">
+          <p>Add more information</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
